@@ -22,7 +22,7 @@ chmod 777 -R $DIR
 # TODO check if exists
 touch $FN
 echo "<VirtualHost *:80>
-DocumentRoot /$PROJECT_DIR/$NAME
+DocumentRoot $PROJECT_DIR/$NAME
 ServerName $NAME.$HOST_SUFFIX
 </VirtualHost>" > $FN
 
