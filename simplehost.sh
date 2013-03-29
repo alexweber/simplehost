@@ -4,6 +4,7 @@
 
 PROJECT_DIR='/home/alex/projects' # without trailing slash
 HOST_SUFFIX='local' # without dot
+USER='alex'
 
 ### STOP EDITING HERE! ###
 
@@ -15,7 +16,7 @@ DIR="$PROJECT_DIR/$NAME"
 # Create project directory
 # TODO check if directory exists
 mkdir $DIR
-chown alex:alex -R $DIR
+chown $USER:$USER -R $DIR
 chmod 777 -R $DIR
 
 # Create VirtualHost
